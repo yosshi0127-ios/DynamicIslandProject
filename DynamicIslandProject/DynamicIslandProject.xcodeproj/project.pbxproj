@@ -24,6 +24,8 @@
 		361E8E7E2AD944DC0061EF0C /* OrderStatus.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 361E8E792AD944DB0061EF0C /* OrderStatus.intentdefinition */; };
 		361E8E812AD944DC0061EF0C /* OrderStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 361E8E6C2AD944DA0061EF0C /* OrderStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		361E8E862AD944E70061EF0C /* OrderStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361E8E752AD944DB0061EF0C /* OrderStatusLiveActivity.swift */; };
+		36DA43912AD97E060027608F /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA43902AD97E060027608F /* OrderAttributes.swift */; };
+		36DA43922AD97E0B0027608F /* OrderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DA43902AD97E060027608F /* OrderAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,7 @@
 		361E8E7A2AD944DC0061EF0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		361E8E7C2AD944DC0061EF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36DA438C2AD975290027608F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		36DA43902AD97E060027608F /* OrderAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAttributes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +150,11 @@
 		361E8E3D2AD940700061EF0C /* DynamicIslandProject */ = {
 			isa = PBXGroup;
 			children = (
-				36DA438C2AD975290027608F /* Info.plist */,
+				36DA438D2AD97D6E0027608F /* Model */,
 				361E8E3E2AD940700061EF0C /* DynamicIslandProjectApp.swift */,
 				361E8E402AD940700061EF0C /* ContentView.swift */,
 				361E8E422AD940720061EF0C /* Assets.xcassets */,
+				36DA438C2AD975290027608F /* Info.plist */,
 				361E8E442AD940720061EF0C /* Preview Content */,
 			);
 			path = DynamicIslandProject;
@@ -194,13 +198,21 @@
 			isa = PBXGroup;
 			children = (
 				361E8E732AD944DB0061EF0C /* OrderStatusBundle.swift */,
-				361E8E752AD944DB0061EF0C /* OrderStatusLiveActivity.swift */,
 				361E8E772AD944DB0061EF0C /* OrderStatus.swift */,
+				361E8E752AD944DB0061EF0C /* OrderStatusLiveActivity.swift */,
 				361E8E792AD944DB0061EF0C /* OrderStatus.intentdefinition */,
 				361E8E7A2AD944DC0061EF0C /* Assets.xcassets */,
 				361E8E7C2AD944DC0061EF0C /* Info.plist */,
 			);
 			path = OrderStatus;
+			sourceTree = "<group>";
+		};
+		36DA438D2AD97D6E0027608F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36DA43902AD97E060027608F /* OrderAttributes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +378,7 @@
 			files = (
 				361E8E7E2AD944DC0061EF0C /* OrderStatus.intentdefinition in Sources */,
 				361E8E862AD944E70061EF0C /* OrderStatusLiveActivity.swift in Sources */,
+				36DA43912AD97E060027608F /* OrderAttributes.swift in Sources */,
 				361E8E412AD940700061EF0C /* ContentView.swift in Sources */,
 				361E8E3F2AD940700061EF0C /* DynamicIslandProjectApp.swift in Sources */,
 			);
@@ -394,6 +407,7 @@
 			files = (
 				361E8E782AD944DB0061EF0C /* OrderStatus.swift in Sources */,
 				361E8E7D2AD944DC0061EF0C /* OrderStatus.intentdefinition in Sources */,
+				36DA43922AD97E0B0027608F /* OrderAttributes.swift in Sources */,
 				361E8E742AD944DB0061EF0C /* OrderStatusBundle.swift in Sources */,
 				361E8E762AD944DB0061EF0C /* OrderStatusLiveActivity.swift in Sources */,
 			);
@@ -470,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -524,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
